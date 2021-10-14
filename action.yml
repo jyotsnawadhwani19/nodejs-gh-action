@@ -1,13 +1,13 @@
-github-action.json
-name: 'greetings'
-description: 'Hello World'
-inputs: 
-  who-to-greet: 'Enter the name of the person whom you want to greet'
-  default: 'Jyotsna Wadhwani'
-  required: true
+name: 'greeting'
+description: 'Hello World!'
+inputs:
+  who-to-greet:
+    description: 'Name of the person who to send greetings'
+    default: 'Kulbhushan Mayer'
+    required: true
 outputs:
-  time: 
+  time:
     description: 'When I have greeted'
 runs:
-  using: 'node12'
+  using: 'node'
   main: 'index.js'
